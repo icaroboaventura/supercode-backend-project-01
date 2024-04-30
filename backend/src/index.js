@@ -59,7 +59,7 @@ app.delete("/api/v1/ships/:shipId", (req, res) => {
 
 // Alle Pfade für Reservierungen
 
-app.get("/api/v1/revervations", (req, res) => {
+app.get("/api/v1/reservations", (req, res) => {
   Reservations.find({})
     .then((ships) => res.status(200).json(ships))
     .catch((err) => res.status(500).json({ message: "Internal Server error", err }));

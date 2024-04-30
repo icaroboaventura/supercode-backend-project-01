@@ -1,0 +1,23 @@
+.dashboard-output {
+  border: 3px solid var(--clr-pink-light);
+  background-color: var(--clr-blue-light-30);
+  border-radius: 25px;
+  padding: 26px 26px 60px 26px;
+}
+
+.dashboard-output h2 {
+  font-size: var(--fs-25px);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+  color: var(--clr-pink-dark);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-output p {
+  font-weight: 500;
+  font-size: var(--fs-175px);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--clr-pink-dark);
+  text-align: center;
+}

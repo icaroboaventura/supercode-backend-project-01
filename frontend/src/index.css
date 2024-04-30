@@ -1,0 +1,28 @@
+@font-face {
+  font-family: kristi;
+  src: url("/fonts/Kristi/Kristi-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --clr-blue-dark: #7bdff2;
+  --clr-blue-light: #b2f7ef;
+  --clr-blue-light-30: #b2f7ef8c;
+  --clr-white: #eff7f6;
+  --clr-pink-dark: #f2b5d4;
+  --clr-pink-light: #f7d6e0;
+  --ft-kristi: kristi;
+  --fs-175px: clamp(2.5rem, -0.3609rem + 12.2066vw, 18.75rem);
+  --fs-143px: clamp(2.6875rem, 0.4868rem + 9.3897vw, 15.1875rem);
+  --fs-32px: clamp(1.3125rem, 0.9228rem + 1.2469vw, 2.875rem);
+  --fs-25px: clamp(1.1875rem, 0.9381rem + 0.798vw, 2.1875rem);
+}

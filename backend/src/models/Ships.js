@@ -4,10 +4,11 @@ import mongoose from "mongoose";
 
 const shipSchema = new mongoose.Schema(
   {
-    bauJahr: { type: Number, required: true },
-    serienNummer: { type: String, required: true, trim: true },
+    baujahr: { type: Number, required: true },
+    seriennummer: { type: String, required: true, trim: true },
     material: [{ type: String, required: true, trim: true }],
     bootsart: { type: String, required: true, trim: true },
+    imgurl: { type: String, required: true, trim: true },
   },
   { collection: "ships", timestamps: true }
 );
