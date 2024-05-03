@@ -2,7 +2,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./Bootübersicht.css";
 import { useContext, useState } from "react";
 import { BooteContext } from "../../context/Context";
-import { GlobalFetchUpdateContext } from "../../context/Context";
 import DetailPopUp from "../../components/DetailPopUp/DetailPopUp";
 import EditPopUp from "../../components/EditPopUp/EditPopUp";
 import AddBootPopUp from "../../components/AddBootPopUp/AddBootPopUp";
@@ -14,9 +13,6 @@ const Bootübersicht = () => {
 
   const [bootDetails, setBootDetails] = useState([]);
   const { boote } = useContext(BooteContext);
-  const { globalFetchUpd, setGlobalFetchUpd } = useContext(GlobalFetchUpdateContext);
-
-  console.log(edit);
 
   return (
     <>
@@ -24,9 +20,13 @@ const Bootübersicht = () => {
         <header className="boote-header">
           <Navbar />
           <section className="boote-wrapper">
-            {detail && <DetailPopUp bootDetails={bootDetails} setDetail={setDetail} />}
+            {detail && (
+              <DetailPopUp bootDetails={bootDetails} setDetail={setDetail} />
+            )}
             {edit && <EditPopUp bootDetails={bootDetails} setEdit={setEdit} />}
-            {bootHinzufügen && <AddBootPopUp setBootHinzufügen={setBootHinzufügen} />}
+            {bootHinzufügen && (
+              <AddBootPopUp setBootHinzufügen={setBootHinzufügen} />
+            )}
             <div className="hero-heading-wrapper">
               <h1>Bootübersicht</h1>
               <img className="underline" src="img/underline.png" alt="" />

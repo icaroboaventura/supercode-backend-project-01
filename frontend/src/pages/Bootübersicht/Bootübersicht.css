@@ -33,6 +33,12 @@
   overflow: scroll;
   margin-inline: 5%;
   position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.boote::-webkit-scrollbar {
+  display: none;
 }
 
 .boot {
@@ -61,7 +67,8 @@
 .add {
   width: 100px;
   position: sticky;
-  left: 90%;
+  left: 99%;
+  margin-right: -18px;
   transition: 0.2s;
 }
 
